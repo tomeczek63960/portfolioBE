@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_categories",
+  "info": {
+    "name": "ProjectCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "projects": {
+      "collection": "projects",
+      "via": "project_categories",
+      "dominant": true
+    }
+  }
+}
