@@ -2,21 +2,31 @@
   "kind": "collectionType",
   "collectionName": "project_categories",
   "info": {
-    "name": "ProjectCategory"
+    "name": "ProjectCategory",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "projects": {
-      "collection": "projects",
       "via": "project_categories",
+      "collection": "projects",
       "dominant": true
     }
   }
