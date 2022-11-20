@@ -529,7 +529,8 @@
     "schemas": {
       "Project-category": {
         "required": [
-          "id"
+          "id",
+          "Theme"
         ],
         "properties": {
           "id": {
@@ -572,6 +573,18 @@
                 "Content": {
                   "type": "dynamiczone"
                 },
+                "project_technologies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "GithubUrl": {
+                  "type": "string"
+                },
+                "WebsiteUrl": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -593,11 +606,21 @@
               }
             }
           },
+          "Theme": {
+            "type": "string",
+            "default": "success",
+            "enum": [
+              "success",
+              "warning",
+              "danger"
+            ]
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "Theme"
               ],
               "properties": {
                 "id": {
@@ -611,6 +634,14 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "Theme": {
+                  "type": "string",
+                  "enum": [
+                    "success",
+                    "warning",
+                    "danger"
+                  ]
                 },
                 "localizations": {
                   "type": "array",
@@ -643,6 +674,9 @@
         }
       },
       "NewProject-category": {
+        "required": [
+          "Theme"
+        ],
         "properties": {
           "Title": {
             "type": "string"
@@ -652,6 +686,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "Theme": {
+            "type": "string",
+            "default": "success",
+            "enum": [
+              "success",
+              "warning",
+              "danger"
+            ]
           },
           "localizations": {
             "type": "array",

@@ -76,6 +76,26 @@
           "localized": true
         }
       }
+    },
+    "project_technologies": {
+      "collection": "project-technolgies",
+      "via": "projects"
+    },
+    "GithubUrl": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "WebsiteUrl": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
