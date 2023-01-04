@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/04/2023 11:20:47 AM"
+    "x-generation-date": "01/04/2023 1:07:48 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7182,7 +7182,8 @@
                       "enum": [
                         "selection.introduction",
                         "selection.welcomebox",
-                        "selection.skills"
+                        "selection.skills",
+                        "selection.work-experience"
                       ]
                     },
                     "id": {
@@ -7291,7 +7292,8 @@
                       "enum": [
                         "selection.introduction",
                         "selection.welcomebox",
-                        "selection.skills"
+                        "selection.skills",
+                        "selection.work-experience"
                       ]
                     },
                     "id": {
@@ -7597,7 +7599,8 @@
                       "enum": [
                         "selection.introduction",
                         "selection.welcomebox",
-                        "selection.skills"
+                        "selection.skills",
+                        "selection.work-experience"
                       ]
                     },
                     "id": {
@@ -7876,6 +7879,145 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Heading": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "HeadingType"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "HeadingType": {
+                          "type": "string",
+                          "default": "h1",
+                          "enum": [
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6"
+                          ]
+                        },
+                        "Color": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "HoverColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "SelectionColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "Text": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "Text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "HeadTitle": {
+                      "type": "string"
+                    },
+                    "HeadText": {
+                      "type": "string"
+                    },
+                    "WorkExperienceItem": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Date": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "BtnText": {
+                      "type": "string"
+                    },
+                    "BtnLinkTo": {
+                      "type": "string",
+                      "enum": [
+                        "Introduction",
+                        "WelcomeBox",
+                        "Skills",
+                        "Cv"
+                      ]
                     }
                   },
                   "required": [
@@ -7959,7 +8101,8 @@
                       "enum": [
                         "selection.introduction",
                         "selection.welcomebox",
-                        "selection.skills"
+                        "selection.skills",
+                        "selection.work-experience"
                       ]
                     },
                     "id": {
@@ -8068,7 +8211,8 @@
                       "enum": [
                         "selection.introduction",
                         "selection.welcomebox",
-                        "selection.skills"
+                        "selection.skills",
+                        "selection.work-experience"
                       ]
                     },
                     "id": {
@@ -8374,7 +8518,8 @@
                       "enum": [
                         "selection.introduction",
                         "selection.welcomebox",
-                        "selection.skills"
+                        "selection.skills",
+                        "selection.work-experience"
                       ]
                     },
                     "id": {
@@ -8653,6 +8798,145 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Heading": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "HeadingType"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "HeadingType": {
+                          "type": "string",
+                          "default": "h1",
+                          "enum": [
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6"
+                          ]
+                        },
+                        "Color": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "HoverColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "SelectionColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "Text": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "Text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "HeadTitle": {
+                      "type": "string"
+                    },
+                    "HeadText": {
+                      "type": "string"
+                    },
+                    "WorkExperienceItem": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Date": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "BtnText": {
+                      "type": "string"
+                    },
+                    "BtnLinkTo": {
+                      "type": "string",
+                      "enum": [
+                        "Introduction",
+                        "WelcomeBox",
+                        "Skills",
+                        "Cv"
+                      ]
                     }
                   },
                   "required": [

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_helpers_work_experience_items",
+  "info": {
+    "name": "WorkExperienceItem",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "Date": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    }
+  }
+}

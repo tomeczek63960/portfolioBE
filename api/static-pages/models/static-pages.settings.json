@@ -45,7 +45,8 @@
       "components": [
         "selection.introduction",
         "selection.welcomebox",
-        "selection.skills"
+        "selection.skills",
+        "selection.work-experience"
       ],
       "pluginOptions": {
         "i18n": {

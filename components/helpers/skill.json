@@ -10,7 +10,7 @@
       "type": "string"
     },
     "Text": {
-      "type": "string"
+      "type": "text"
     },
     "Image": {
       "model": "file",

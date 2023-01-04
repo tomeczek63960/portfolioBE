@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_selection_work_experiences",
+  "info": {
+    "name": "WorkExperience",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "helpers.heading"
+    },
+    "Paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.paragraph"
+    },
+    "HeadTitle": {
+      "type": "string"
+    },
+    "HeadText": {
+      "type": "text"
+    },
+    "WorkExperienceItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.work-experience-item"
+    },
+    "BtnText": {
+      "type": "string"
+    },
+    "BtnLinkTo": {
+      "type": "enumeration",
+      "enum": [
+        "Introduction",
+        "WelcomeBox",
+        "Skills",
+        "Cv"
+      ]
+    }
+  }
+}
