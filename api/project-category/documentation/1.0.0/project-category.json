@@ -570,9 +570,6 @@
                     "type": "string"
                   }
                 },
-                "Content": {
-                  "type": "dynamiczone"
-                },
                 "project_technologies": {
                   "type": "array",
                   "items": {

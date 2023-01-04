@@ -46,7 +46,11 @@
         "selection.introduction",
         "selection.welcomebox",
         "selection.skills",
-        "selection.work-experience"
+        "selection.work-experience",
+        "selection.cv",
+        "selection.contact-form",
+        "selection.projects-experience",
+        "selection.projects"
       ],
       "pluginOptions": {
         "i18n": {

@@ -66,17 +66,6 @@
       "via": "projects",
       "collection": "project-category"
     },
-    "Content": {
-      "type": "dynamiczone",
-      "components": [
-        "projects.project-info"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "project_technologies": {
       "collection": "project-technolgies",
       "via": "projects"

@@ -556,7 +556,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -666,7 +670,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -973,7 +981,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -1266,7 +1278,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -1391,6 +1407,385 @@
                         "Skills",
                         "Cv"
                       ]
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Heading": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "HeadingType"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "HeadingType": {
+                          "type": "string",
+                          "default": "h1",
+                          "enum": [
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6"
+                          ]
+                        },
+                        "Color": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "HoverColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "SelectionColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "Text": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "Text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "LinkText": {
+                      "type": "string"
+                    },
+                    "ListItems": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Cv": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Cv"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Heading": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "HeadingType"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "HeadingType": {
+                          "type": "string",
+                          "default": "h1",
+                          "enum": [
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6"
+                          ]
+                        },
+                        "Color": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "HoverColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "SelectionColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "Text": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "Text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProjectsExperienceItem": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Role": {
+                            "type": "string"
+                          },
+                          "Technologies": {
+                            "type": "string"
+                          },
+                          "Sector": {
+                            "type": "string"
+                          },
+                          "Description": {
+                            "type": "string"
+                          },
+                          "Accomplishments": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1475,7 +1870,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -1585,7 +1984,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -1892,7 +2295,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -2185,7 +2592,11 @@
                         "selection.introduction",
                         "selection.welcomebox",
                         "selection.skills",
-                        "selection.work-experience"
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
                       ]
                     },
                     "id": {
@@ -2310,6 +2721,385 @@
                         "Skills",
                         "Cv"
                       ]
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Heading": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "HeadingType"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "HeadingType": {
+                          "type": "string",
+                          "default": "h1",
+                          "enum": [
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6"
+                          ]
+                        },
+                        "Color": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "HoverColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "SelectionColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "Text": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "Text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "LinkText": {
+                      "type": "string"
+                    },
+                    "ListItems": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Cv": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Cv"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Heading": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "HeadingType"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "HeadingType": {
+                          "type": "string",
+                          "default": "h1",
+                          "enum": [
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6"
+                          ]
+                        },
+                        "Color": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "HoverColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "SelectionColor": {
+                          "type": "string",
+                          "enum": [
+                            "white",
+                            "blue",
+                            "purple"
+                          ]
+                        },
+                        "Text": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "Text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProjectsExperienceItem": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Role": {
+                            "type": "string"
+                          },
+                          "Technologies": {
+                            "type": "string"
+                          },
+                          "Sector": {
+                            "type": "string"
+                          },
+                          "Description": {
+                            "type": "string"
+                          },
+                          "Accomplishments": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "selection.introduction",
+                        "selection.welcomebox",
+                        "selection.skills",
+                        "selection.work-experience",
+                        "selection.cv",
+                        "selection.contact-form",
+                        "selection.projects-experience",
+                        "selection.projects"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
                     }
                   },
                   "required": [

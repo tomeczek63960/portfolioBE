@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_selection_projects_experiences",
+  "info": {
+    "name": "ProjectsExperience",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "ProjectsExperienceItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.projects-experience-item"
+    }
+  }
+}
