@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/welcome-box-messages",
+      "handler": "welcome-box-messages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/welcome-box-messages/count",
+      "handler": "welcome-box-messages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/welcome-box-messages/:id",
+      "handler": "welcome-box-messages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/welcome-box-messages",
+      "handler": "welcome-box-messages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/welcome-box-messages/:id",
+      "handler": "welcome-box-messages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/welcome-box-messages/:id",
+      "handler": "welcome-box-messages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_helpers_skills_carousels",
+  "info": {
+    "name": "SkillsCarousel",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "helpers.heading"
+    },
+    "Skill": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.skill"
+    }
+  }
+}

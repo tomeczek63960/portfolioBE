@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_helpers_welcome_box_messages",
+  "info": {
+    "name": "WelcomeBoxMessage",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "admin",
+        "user"
+      ]
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

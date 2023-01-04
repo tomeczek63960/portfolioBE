@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/blog-tags": {
+    "/welcome-box-messages": {
       "get": {
         "deprecated": false,
-        "description": "Find all the blog-tags's records",
+        "description": "Find all the welcome-box-messages's records",
         "responses": {
           "200": {
-            "description": "Retrieve blog-tags document(s)",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog-tags"
+          "Welcome-box-messages"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new blog-tags record",
+        "description": "Create a new welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "Retrieve blog-tags document(s)",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog-tags"
+          "Welcome-box-messages"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBlog-tags"
+                "$ref": "#/components/schemas/NewWelcome-box-messages"
               }
             }
           }
         }
       }
     },
-    "/blog-tags/count": {
+    "/welcome-box-messages/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of blog-tags documents",
+        "description": "Retrieve the number of welcome-box-messages documents",
         "responses": {
           "200": {
-            "description": "Retrieve blog-tags document(s)",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Blog-tags"
+          "Welcome-box-messages"
         ],
         "parameters": []
       }
     },
-    "/blog-tags/{id}": {
+    "/welcome-box-messages/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one blog-tags record",
+        "description": "Find one welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "Retrieve blog-tags document(s)",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog-tags"
+          "Welcome-box-messages"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single blog-tags record",
+        "description": "Update a single welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "Retrieve blog-tags document(s)",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog-tags"
+          "Welcome-box-messages"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBlog-tags"
+                "$ref": "#/components/schemas/NewWelcome-box-messages"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single blog-tags record",
+        "description": "Delete a single welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "deletes a single blog-tags based on the ID supplied",
+            "description": "deletes a single welcome-box-messages based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog-tags"
+          "Welcome-box-messages"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Blog-tags": {
+      "Welcome-box-messages": {
         "required": [
           "id"
         ],
@@ -535,63 +535,90 @@
           "id": {
             "type": "string"
           },
-          "Tag": {
-            "type": "string"
+          "Type": {
+            "type": "string",
+            "enum": [
+              "admin",
+              "user"
+            ]
           },
-          "blogs": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Title": {
-                  "type": "string"
-                },
-                "Slug": {
-                  "type": "string"
-                },
-                "SeoTitile": {
-                  "type": "string"
-                },
-                "SeoDescription": {
-                  "type": "string"
-                },
-                "Image": {
-                  "type": "string"
-                },
-                "blog_category": {
-                  "type": "string"
-                },
-                "blog_tags": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "Image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
+          },
+          "Message": {
+            "type": "string"
+          },
+          "Toggler": {
+            "type": "string",
+            "enum": [
+              "Experience",
+              "Contact",
+              "Job"
+            ]
           },
           "localizations": {
             "type": "array",
@@ -603,14 +630,26 @@
                 "id": {
                   "type": "string"
                 },
-                "Tag": {
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "admin",
+                    "user"
+                  ]
+                },
+                "Image": {
                   "type": "string"
                 },
-                "blogs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "Message": {
+                  "type": "string"
+                },
+                "Toggler": {
+                  "type": "string",
+                  "enum": [
+                    "Experience",
+                    "Contact",
+                    "Job"
+                  ]
                 },
                 "localizations": {
                   "type": "array",
@@ -642,16 +681,25 @@
           }
         }
       },
-      "NewBlog-tags": {
+      "NewWelcome-box-messages": {
         "properties": {
-          "Tag": {
+          "Type": {
+            "type": "string",
+            "enum": [
+              "admin",
+              "user"
+            ]
+          },
+          "Message": {
             "type": "string"
           },
-          "blogs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "Toggler": {
+            "type": "string",
+            "enum": [
+              "Experience",
+              "Contact",
+              "Job"
+            ]
           },
           "localizations": {
             "type": "array",

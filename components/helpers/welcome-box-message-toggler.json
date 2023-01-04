@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_helpers_welcome_box_message_togglers",
+  "info": {
+    "name": "WelcomeBoxMessageToggler",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Toggler": {
+      "type": "enumeration",
+      "enum": [
+        "Experience",
+        "Contact",
+        "Job"
+      ]
+    }
+  }
+}

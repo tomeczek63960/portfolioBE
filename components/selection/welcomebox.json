@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_selection_welcomeboxes",
+  "info": {
+    "name": "welcomebox",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "helpers.heading"
+    },
+    "Paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.paragraph"
+    },
+    "HeadName": {
+      "type": "string"
+    },
+    "HeadPosition": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "WelcomeBoxMessageToggler": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.welcome-box-message-toggler"
+    },
+    "BottomText": {
+      "type": "string"
+    },
+    "active_messages": {
+      "collection": "welcome-box-messages"
+    },
+    "new_messages": {
+      "collection": "welcome-box-messages"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_helpers_skills",
+  "info": {
+    "name": "Skill",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Icon": {
+      "type": "enumeration",
+      "enum": [
+        "Angular",
+        "Adobexd",
+        "Contentful",
+        "Css",
+        "Figma",
+        "Gatsby",
+        "Gsap",
+        "Html",
+        "Javascript",
+        "NextJs",
+        "Nuxt",
+        "ReactJs",
+        "Redux",
+        "Sass",
+        "Strapi",
+        "Typescript",
+        "Vue",
+        "StyledComponents",
+        "Php",
+        "Pimcore",
+        "Shopware"
+      ]
+    }
+  }
+}
