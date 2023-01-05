@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/05/2023 11:49:28 AM"
+    "x-generation-date": "01/05/2023 3:12:25 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5633,6 +5633,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -5747,6 +5750,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -6058,6 +6064,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -6151,6 +6160,9 @@
                                     }
                                   }
                                 }
+                              },
+                              "Exceptions": {
+                                "type": "string"
                               }
                             }
                           },
@@ -6355,6 +6367,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -6498,6 +6513,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -6691,6 +6709,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -6947,6 +6968,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -7061,6 +7085,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -7372,6 +7399,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -7465,6 +7495,9 @@
                                     }
                                   }
                                 }
+                              },
+                              "Exceptions": {
+                                "type": "string"
                               }
                             }
                           },
@@ -7669,6 +7702,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -7812,6 +7848,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
@@ -8005,6 +8044,9 @@
                               }
                             }
                           }
+                        },
+                        "Exceptions": {
+                          "type": "string"
                         }
                       }
                     },
