@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/05/2023 3:12:25 PM"
+    "x-generation-date": "01/08/2023 12:05:09 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6273,7 +6273,10 @@
                                     "StyledComponents",
                                     "Php",
                                     "Pimcore",
-                                    "Shopware"
+                                    "Shopware",
+                                    "BuilderIo",
+                                    "Hygraph",
+                                    "PrismicIo"
                                   ]
                                 }
                               }
@@ -7608,7 +7611,10 @@
                                     "StyledComponents",
                                     "Php",
                                     "Pimcore",
-                                    "Shopware"
+                                    "Shopware",
+                                    "BuilderIo",
+                                    "Hygraph",
+                                    "PrismicIo"
                                   ]
                                 }
                               }

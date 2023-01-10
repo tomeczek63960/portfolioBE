@@ -2,7 +2,8 @@
   "collectionName": "components_helpers_skills",
   "info": {
     "name": "Skill",
-    "icon": "air-freshener"
+    "icon": "air-freshener",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -45,7 +46,10 @@
         "StyledComponents",
         "Php",
         "Pimcore",
-        "Shopware"
+        "Shopware",
+        "BuilderIo",
+        "Hygraph",
+        "PrismicIo"
       ]
     }
   }

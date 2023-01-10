@@ -1268,7 +1268,10 @@
                                     "StyledComponents",
                                     "Php",
                                     "Pimcore",
-                                    "Shopware"
+                                    "Shopware",
+                                    "BuilderIo",
+                                    "Hygraph",
+                                    "PrismicIo"
                                   ]
                                 }
                               }
@@ -2603,7 +2606,10 @@
                                     "StyledComponents",
                                     "Php",
                                     "Pimcore",
-                                    "Shopware"
+                                    "Shopware",
+                                    "BuilderIo",
+                                    "Hygraph",
+                                    "PrismicIo"
                                   ]
                                 }
                               }
