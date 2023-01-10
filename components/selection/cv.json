@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_selection_cvs",
+  "info": {
+    "name": "Cv",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "helpers.heading"
+    },
+    "Paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.paragraph"
+    },
+    "LinkText": {
+      "type": "string"
+    },
+    "ListItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.text"
+    },
+    "Cv": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

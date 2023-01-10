@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_helpers_paragraphs",
+  "info": {
+    "name": "Paragraph",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "text"
+    }
+  }
+}

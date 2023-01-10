@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_helpers_texts",
+  "info": {
+    "name": "Text",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "text"
+    }
+  }
+}

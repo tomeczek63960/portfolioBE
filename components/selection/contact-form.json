@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_selection_contact_forms",
+  "info": {
+    "name": "ContactForm",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "helpers.heading"
+    },
+    "Paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.paragraph"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_helpers_projects_experience_items",
+  "info": {
+    "name": "ProjectsExperienceItem",
+    "icon": "balance-scale-right"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "text"
+    },
+    "Role": {
+      "type": "string"
+    },
+    "Technologies": {
+      "type": "text"
+    },
+    "Sector": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Accomplishments": {
+      "type": "text"
+    }
+  }
+}

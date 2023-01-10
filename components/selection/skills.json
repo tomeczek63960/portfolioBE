@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_selection_skills",
+  "info": {
+    "name": "Skills",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "helpers.heading"
+    },
+    "Paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.paragraph"
+    },
+    "SkillsCarousel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.skills-carousel"
+    }
+  }
+}

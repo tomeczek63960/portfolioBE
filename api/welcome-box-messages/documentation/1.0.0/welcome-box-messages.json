@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/project-categories": {
+    "/welcome-box-messages": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the welcome-box-messages's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Project-category"
+          "Welcome-box-messages"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Project-category"
+          "Welcome-box-messages"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject-category"
+                "$ref": "#/components/schemas/NewWelcome-box-messages"
               }
             }
           }
         }
       }
     },
-    "/project-categories/count": {
+    "/welcome-box-messages/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of welcome-box-messages documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Project-category"
+          "Welcome-box-messages"
         ],
         "parameters": []
       }
     },
-    "/project-categories/{id}": {
+    "/welcome-box-messages/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Project-category"
+          "Welcome-box-messages"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve welcome-box-messages document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Project-category"
+          "Welcome-box-messages"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject-category"
+                "$ref": "#/components/schemas/NewWelcome-box-messages"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single welcome-box-messages record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single welcome-box-messages based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Project-category"
+          "Welcome-box-messages"
         ],
         "parameters": [
           {
@@ -527,19 +527,100 @@
   },
   "components": {
     "schemas": {
-      "Project-category": {
+      "Welcome-box-messages": {
         "required": [
-          "id",
-          "Theme"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Title": {
+          "Type": {
+            "type": "string",
+            "enum": [
+              "admin",
+              "user"
+            ]
+          },
+          "Image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Message": {
             "type": "string"
           },
-          "projects": {
+          "Toggler": {
+            "type": "string",
+            "enum": [
+              "Experience",
+              "Contact",
+              "Job"
+            ]
+          },
+          "localizations": {
             "type": "array",
             "items": {
               "required": [
@@ -549,95 +630,25 @@
                 "id": {
                   "type": "string"
                 },
-                "Slug": {
-                  "type": "string"
-                },
-                "Title": {
-                  "type": "string"
-                },
-                "ShortDescription": {
-                  "type": "string"
-                },
-                "Description": {
-                  "type": "string"
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "admin",
+                    "user"
+                  ]
                 },
                 "Image": {
                   "type": "string"
                 },
-                "project_categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "project_technologies": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "GithubUrl": {
+                "Message": {
                   "type": "string"
                 },
-                "WebsiteUrl": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "Theme": {
-            "type": "string",
-            "default": "success",
-            "enum": [
-              "success",
-              "warning",
-              "danger"
-            ]
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "Theme"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Title": {
-                  "type": "string"
-                },
-                "projects": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "Theme": {
+                "Toggler": {
                   "type": "string",
                   "enum": [
-                    "success",
-                    "warning",
-                    "danger"
+                    "Experience",
+                    "Contact",
+                    "Job"
                   ]
                 },
                 "localizations": {
@@ -670,27 +681,24 @@
           }
         }
       },
-      "NewProject-category": {
-        "required": [
-          "Theme"
-        ],
+      "NewWelcome-box-messages": {
         "properties": {
-          "Title": {
+          "Type": {
+            "type": "string",
+            "enum": [
+              "admin",
+              "user"
+            ]
+          },
+          "Message": {
             "type": "string"
           },
-          "projects": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "Theme": {
+          "Toggler": {
             "type": "string",
-            "default": "success",
             "enum": [
-              "success",
-              "warning",
-              "danger"
+              "Experience",
+              "Contact",
+              "Job"
             ]
           },
           "localizations": {

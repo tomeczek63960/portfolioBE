@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_selection_projects",
+  "info": {
+    "name": "Projects",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

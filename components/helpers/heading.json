@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_helpers_headings",
+  "info": {
+    "name": "Heading",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "HeadingType": {
+      "type": "enumeration",
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6"
+      ],
+      "default": "h1",
+      "required": true
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "blue",
+        "purple"
+      ]
+    },
+    "HoverColor": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "blue",
+        "purple"
+      ]
+    },
+    "SelectionColor": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "blue",
+        "purple"
+      ]
+    },
+    "Text": {
+      "type": "component",
+      "repeatable": true,
+      "component": "helpers.text"
+    },
+    "Exceptions": {
+      "type": "string"
+    }
+  }
+}
