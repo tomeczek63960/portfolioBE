@@ -543,7 +543,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "CreationDate",
+                "ShortCreationDate"
               ],
               "properties": {
                 "id": {
@@ -583,6 +585,12 @@
                   "type": "string"
                 },
                 "ImageCard": {
+                  "type": "string"
+                },
+                "CreationDate": {
+                  "type": "string"
+                },
+                "ShortCreationDate": {
                   "type": "string"
                 },
                 "localizations": {

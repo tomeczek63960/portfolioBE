@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/15/2023 11:09:53 AM"
+    "x-generation-date": "01/15/2023 11:52:18 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4897,7 +4897,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "CreationDate",
+                "ShortCreationDate"
               ],
               "properties": {
                 "id": {
@@ -4937,6 +4939,12 @@
                   "type": "string"
                 },
                 "ImageCard": {
+                  "type": "string"
+                },
+                "CreationDate": {
+                  "type": "string"
+                },
+                "ShortCreationDate": {
                   "type": "string"
                 },
                 "localizations": {
@@ -5086,7 +5094,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "CreationDate",
+                "ShortCreationDate"
               ],
               "properties": {
                 "id": {
@@ -5126,6 +5136,12 @@
                   "type": "string"
                 },
                 "ImageCard": {
+                  "type": "string"
+                },
+                "CreationDate": {
+                  "type": "string"
+                },
+                "ShortCreationDate": {
                   "type": "string"
                 },
                 "localizations": {
@@ -5232,7 +5248,9 @@
       },
       "Projects": {
         "required": [
-          "id"
+          "id",
+          "CreationDate",
+          "ShortCreationDate"
         ],
         "properties": {
           "id": {
@@ -5479,11 +5497,19 @@
               }
             }
           },
+          "CreationDate": {
+            "type": "string"
+          },
+          "ShortCreationDate": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "CreationDate",
+                "ShortCreationDate"
               ],
               "properties": {
                 "id": {
@@ -5525,6 +5551,12 @@
                 "ImageCard": {
                   "type": "string"
                 },
+                "CreationDate": {
+                  "type": "string"
+                },
+                "ShortCreationDate": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -5556,6 +5588,10 @@
         }
       },
       "NewProjects": {
+        "required": [
+          "CreationDate",
+          "ShortCreationDate"
+        ],
         "properties": {
           "Slug": {
             "type": "string"
@@ -5585,6 +5621,12 @@
             "type": "string"
           },
           "WebsiteUrl": {
+            "type": "string"
+          },
+          "CreationDate": {
+            "type": "string"
+          },
+          "ShortCreationDate": {
             "type": "string"
           },
           "localizations": {

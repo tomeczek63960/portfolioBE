@@ -516,7 +516,9 @@
     "schemas": {
       "Projects": {
         "required": [
-          "id"
+          "id",
+          "CreationDate",
+          "ShortCreationDate"
         ],
         "properties": {
           "id": {
@@ -763,11 +765,19 @@
               }
             }
           },
+          "CreationDate": {
+            "type": "string"
+          },
+          "ShortCreationDate": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "CreationDate",
+                "ShortCreationDate"
               ],
               "properties": {
                 "id": {
@@ -809,6 +819,12 @@
                 "ImageCard": {
                   "type": "string"
                 },
+                "CreationDate": {
+                  "type": "string"
+                },
+                "ShortCreationDate": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -840,6 +856,10 @@
         }
       },
       "NewProjects": {
+        "required": [
+          "CreationDate",
+          "ShortCreationDate"
+        ],
         "properties": {
           "Slug": {
             "type": "string"
@@ -869,6 +889,12 @@
             "type": "string"
           },
           "WebsiteUrl": {
+            "type": "string"
+          },
+          "CreationDate": {
+            "type": "string"
+          },
+          "ShortCreationDate": {
             "type": "string"
           },
           "localizations": {
