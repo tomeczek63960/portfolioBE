@@ -581,6 +581,9 @@
                 "WebsiteUrl": {
                   "type": "string"
                 },
+                "ImageCard": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
