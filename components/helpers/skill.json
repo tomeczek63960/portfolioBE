@@ -49,7 +49,11 @@
         "Shopware",
         "BuilderIo",
         "Hygraph",
-        "PrismicIo"
+        "PrismicIo",
+        "GraphQl",
+        "Twig",
+        "NodeJs",
+        "Storyblok"
       ]
     }
   }
