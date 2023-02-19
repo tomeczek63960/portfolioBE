@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/22/2023 2:29:16 PM"
+    "x-generation-date": "02/19/2023 2:11:55 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4947,6 +4947,12 @@
                 "ShortCreationDate": {
                   "type": "string"
                 },
+                "order": {
+                  "type": "integer"
+                },
+                "GithubBackendUrl": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -5142,6 +5148,12 @@
                   "type": "string"
                 },
                 "ShortCreationDate": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "GithubBackendUrl": {
                   "type": "string"
                 },
                 "localizations": {
@@ -5503,6 +5515,12 @@
           "ShortCreationDate": {
             "type": "string"
           },
+          "order": {
+            "type": "integer"
+          },
+          "GithubBackendUrl": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -5555,6 +5573,12 @@
                   "type": "string"
                 },
                 "ShortCreationDate": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "GithubBackendUrl": {
                   "type": "string"
                 },
                 "localizations": {
@@ -5627,6 +5651,12 @@
             "type": "string"
           },
           "ShortCreationDate": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer"
+          },
+          "GithubBackendUrl": {
             "type": "string"
           },
           "localizations": {

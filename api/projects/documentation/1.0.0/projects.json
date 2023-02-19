@@ -771,6 +771,12 @@
           "ShortCreationDate": {
             "type": "string"
           },
+          "order": {
+            "type": "integer"
+          },
+          "GithubBackendUrl": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -823,6 +829,12 @@
                   "type": "string"
                 },
                 "ShortCreationDate": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "GithubBackendUrl": {
                   "type": "string"
                 },
                 "localizations": {
@@ -895,6 +907,12 @@
             "type": "string"
           },
           "ShortCreationDate": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer"
+          },
+          "GithubBackendUrl": {
             "type": "string"
           },
           "localizations": {
